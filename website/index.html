@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Basic Comment Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Comment Form</h1>
+  <form id="commentForm">
+    <label for="firstName">First Name:</label>
+    <input type="text" id="firstName" name="firstName" required>
+    <label for="lastName">Last Name:</label>
+    <input type="text" id="lastName" name="lastName" required>
+    <label for="comment">Comment:</label>
+    <textarea id="comment" name="comment" required></textarea>
+    <button type="submit">Submit</button>
+  </form>
+  <div id="comments"></div>
+  <script src="script.js"></script>
+</body>
+</html>

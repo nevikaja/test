@@ -2,21 +2,23 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Basic Comment Form</title>
+  <title>Simple Calculator</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Comment Form</h1>
-  <form id="commentForm">
-    <label for="firstName">First Name:</label>
-    <input type="text" id="firstName" name="firstName" required>
-    <label for="lastName">Last Name:</label>
-    <input type="text" id="lastName" name="lastName" required>
-    <label for="comment">Comment:</label>
-    <textarea id="comment" name="comment" required></textarea>
-    <button type="submit">Submit</button>
+  <h1>Calculator</h1>
+  <form id="calcForm">
+    <input type="number" id="num1" required>
+    <select id="operator">
+      <option value="add">+</option>
+      <option value="subtract">-</option>
+      <option value="multiply">*</option>
+      <option value="divide">/</option>
+    </select>
+    <input type="number" id="num2" required>
+    <button type="submit">=</button>
   </form>
-  <div id="comments"></div>
+  <div id="result"></div>
   <script src="script.js"></script>
 </body>
 </html>
